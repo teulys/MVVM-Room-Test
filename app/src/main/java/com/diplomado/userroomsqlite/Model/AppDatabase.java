@@ -23,15 +23,5 @@ public abstract class AppDatabase extends RoomDatabase {
                     .build();
         }
         return INSTANCE;
-//        if (INSTANCE == null) {
-//            synchronized (AppDatabase.class) {
-//                if (INSTANCE == null) {
-//                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-//                            AppDatabase.class, "user_database")
-//                            .build();
-//                }
-//            }
-//        }
-//        return INSTANCE;
     }
 }
